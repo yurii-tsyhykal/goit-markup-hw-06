@@ -42,6 +42,9 @@ main .sublist-title {
 .span-logo {
   color: #2e2f42;
 }
+.menu-list {
+  color: #2e2f42;
+}
 .menu .menu-list-link {
   font-weight: 500;
 }
@@ -79,7 +82,6 @@ main .sublist-title {
 
 .first-section .button {
   cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
