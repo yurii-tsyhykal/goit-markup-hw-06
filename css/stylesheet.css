@@ -42,11 +42,10 @@ main .sublist-title {
 .span-logo {
   color: #2e2f42;
 }
-.menu-list {
-  color: #2e2f42;
-}
+
 .menu .menu-list-link {
   font-weight: 500;
+  color: #2e2f42;
 }
 
 .menu .menu-list-link:hover,
