@@ -118,6 +118,7 @@ main .sublist-title {
 
 .footer .nav-logo {
   color: #f4f4fd;
+  text-decoration: none;
 }
 
 .footer .description {
