@@ -1,0 +1,125 @@
+/* global styles*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
+}
+/* global styles for h2  */
+main .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+/* global styles for h3  */
+main .sublist-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+/* start header section */
+.header a {
+  text-decoration: none;
+}
+.nav-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+
+  font-style: normal;
+}
+.span-logo {
+  color: #4d5ae5;
+}
+.menu .menu-list-link {
+  font-weight: 500;
+}
+
+.menu .menu-list-link:hover,
+.menu .menu-list-link:focus {
+  font-weight: 500;
+  color: #404bbf;
+}
+
+.address .address-list-link {
+  color: #434455;
+  font-style: normal;
+}
+
+.address .address-list-link:hover,
+.address .address-list-link:focus {
+  color: #404bbf;
+}
+/* ended header styles */
+/* start main blockstyles/first section */
+.first-section {
+  background-color: #2e2f42;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.first-section .button {
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.first-section .button:hover,
+.first-section .button:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+/* ended first section */
+/* Our goals section with global styles*/
+/* start Our team section*/
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-list .sublist-title,
+.team-list .description {
+  text-align: center;
+}
+/* end Our team section */
+/* Our portfolio section with global styles */
+/* start footer section*/
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer .nav-logo {
+  color: #f4f4fd;
+}
+
+.footer .description {
+  color: #f4f4fd;
+}
