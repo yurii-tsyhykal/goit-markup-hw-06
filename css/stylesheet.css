@@ -11,7 +11,7 @@ body {
 main .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -33,15 +33,14 @@ main .sublist-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
-
+  color: #4d5ae5;
   font-style: normal;
 }
 .span-logo {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 .menu .menu-list-link {
   font-weight: 500;
@@ -52,10 +51,11 @@ main .sublist-title {
   font-weight: 500;
   color: #404bbf;
 }
-
+.address {
+  font-style: normal;
+}
 .address .address-list-link {
   color: #434455;
-  font-style: normal;
 }
 
 .address .address-list-link:hover,
@@ -71,7 +71,7 @@ main .sublist-title {
 .page-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
@@ -105,6 +105,9 @@ main .sublist-title {
 .team-section {
   background-color: #f4f4fd;
 }
+.team-list-item {
+  background-color: #fff;
+}
 .team-list .sublist-title,
 .team-list .description {
   text-align: center;
@@ -117,10 +120,14 @@ main .sublist-title {
 }
 
 .footer .nav-logo {
-  color: #f4f4fd;
+  color: #4d5ae5;
   text-decoration: none;
 }
 
 .footer .description {
+  color: #f4f4fd;
+}
+
+.footer .span-logo {
   color: #f4f4fd;
 }
