@@ -7,6 +7,9 @@ body {
   background-color: #ffffff;
   letter-spacing: 0.02em;
 }
+ul {
+  list-style-type: none;
+}
 /* global styles for h2  */
 main .title {
   font-weight: 700;
