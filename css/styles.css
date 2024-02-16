@@ -20,6 +20,9 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -61,17 +64,19 @@ main .sublist-title {
 .menu,
 .address-list {
   display: flex;
-  flex-direction: row;
 }
 
 .container-header {
-  padding: 24px 15px;
+  padding: 0x 15px;
+  justify-content: space-between;
 }
 
 .header a {
   text-decoration: none;
 }
-
+.nav-page {
+  align-items: center;
+}
 .nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -90,6 +95,9 @@ main .sublist-title {
   color: #2e2f42;
 }
 
+.menu {
+  column-gap: 40px;
+}
 .menu .menu-list-link {
   font-weight: 500;
   color: #2e2f42;
@@ -100,14 +108,11 @@ main .sublist-title {
   font-weight: 500;
   color: #404bbf;
 }
-/* ============margins for menu list items=========== */
-.menu-list:not(:last-child) {
-  margin-right: 40px;
+.menu-list {
+  padding: 24px 0;
 }
+
 /* margin for menu list */
-.menu {
-  margin-right: 332px;
-}
 .address {
   font-style: normal;
 }
@@ -132,6 +137,7 @@ main .sublist-title {
 /* start main blockstyles/first section */
 .first-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .page-title {
@@ -142,11 +148,13 @@ main .sublist-title {
   letter-spacing: 0.02em;
   color: #fff;
   /* added margin-btn */
+  margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
 }
 
 .first-section .button {
+  display: block;
   cursor: pointer;
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -157,8 +165,10 @@ main .sublist-title {
   color: #fff;
   border-radius: 4px;
   padding: 16px 32px;
-  max-width: 169px;
+  min-width: 169px;
   border: none;
+  margin: 0 auto;
+  height: 56px;
 }
 
 .first-section .button:hover,
@@ -170,28 +180,35 @@ main .sublist-title {
   letter-spacing: 0.04em;
   color: #fff;
   border: none;
-  max-width: 169px;
+  min-width: 169px;
+  height: 56px;
 }
 
-.container-first-section {
-  padding: 188px, 331px, 120px, 331px;
-  display: flex;
-  flex-direction: column;
-}
 /* ended first section */
 /* Our goals section styles*/
-.title-none {
-  visibility: hidden;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .goals-list {
   /* box model */
   display: flex;
-  flex-direction: row;
+  gap: 24px;
 }
 
-.goals-list-item:not(:last-child) {
-  margin-right: 24px;
+.goals-list-item {
+  max-width: calc((100% - 72px) / 4);
 }
 /* start Our team section*/
 .team-section {
@@ -204,14 +221,20 @@ main .sublist-title {
 
 .team-list {
   display: flex;
-  flex-direction: row;
+  gap: 24px;
 }
 .team-list-item {
+  /* box model */
+  border-radius: 0 0 4px 4px;
+  max-width: calc((100% - 72px) / 4);
+  /* styles */
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
-  padding-bottom: 32px;
 }
-.team-list-item:not(:last-child) {
-  margin-right: 24px;
+
+.team-list-container {
+  padding: 32px 0;
 }
 .team-list .sublist-title,
 .team-list .description {
@@ -221,10 +244,6 @@ main .sublist-title {
 .sublist-title {
   margin-bottom: 8px;
 }
-
-.team-list-item img {
-  margin-bottom: 32px;
-}
 /* end Our team section */
 /* Our portfolio section styles */
 
@@ -233,45 +252,39 @@ main .sublist-title {
 }
 .portfolio-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
 }
-.portfolio-list:not(nth-child(3n + 1)) {
-  width: calc((100% + 48px) / 3);
-}
-
-.portfolio-sublist-title {
-  margin-bottom: 8px;
+.portfolio-list-item {
+  max-width: calc((100% + 48px) / 3);
 }
 
 .portfolio-card {
-  padding-left: 16px;
-  margin-bottom: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+.portfolio-sublist-title {
+  margin-bottom: 8px;
 }
 
 /* start footer section*/
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer .nav-logo {
   color: #4d5ae5;
   text-decoration: none;
-  padding: 1.5px 0;
+  margin: 0;
 }
 
-.footer .description {
-  color: #f4f4fd;
-}
-
+.footer .description,
 .footer .span-logo {
   color: #f4f4fd;
 }
 
-.footer-container {
-  margin: 0;
-  padding: 100px 0;
+.footer-decription {
   max-width: 264px;
 }
