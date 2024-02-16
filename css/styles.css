@@ -275,9 +275,10 @@ main .sublist-title {
 }
 
 .footer .nav-logo {
+  display: block;
   color: #4d5ae5;
   text-decoration: none;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .footer .description,
