@@ -7,9 +7,33 @@ body {
   background-color: #ffffff;
   letter-spacing: 0.02em;
 }
+/* ===========Global margin/padding=========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+}
 ul {
   list-style-type: none;
 }
+
+.section {
+  padding: 120px 0;
+}
+
 /* global styles for h2  */
 main .title {
   font-weight: 700;
@@ -29,9 +53,25 @@ main .sublist-title {
   color: #2e2f42;
 }
 /* start header section */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header,
+.menu,
+.address-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-header {
+  padding: 24px 15px;
+}
+
 .header a {
   text-decoration: none;
 }
+
 .nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -41,7 +81,11 @@ main .sublist-title {
   text-transform: uppercase;
   color: #4d5ae5;
   font-style: normal;
+  /* added margin */
+  margin-right: 76px;
+  padding: 1.5px 0;
 }
+
 .span-logo {
   color: #2e2f42;
 }
@@ -56,6 +100,14 @@ main .sublist-title {
   font-weight: 500;
   color: #404bbf;
 }
+/* ============margins for menu list items=========== */
+.menu-list:not(:last-child) {
+  margin-right: 40px;
+}
+/* margin for menu list */
+.menu {
+  margin-right: 332px;
+}
 .address {
   font-style: normal;
 }
@@ -66,6 +118,15 @@ main .sublist-title {
 .address .address-list-link:hover,
 .address .address-list-link:focus {
   color: #404bbf;
+}
+
+.address-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-page {
+  display: flex;
+  flex-direction: row;
 }
 /* ended header styles */
 /* start main blockstyles/first section */
@@ -80,6 +141,9 @@ main .sublist-title {
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
+  /* added margin-btn */
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .first-section .button {
@@ -91,6 +155,10 @@ main .sublist-title {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  max-width: 169px;
+  border: none;
 }
 
 .first-section .button:hover,
@@ -101,22 +169,89 @@ main .sublist-title {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #fff;
+  border: none;
+  max-width: 169px;
+}
+
+.container-first-section {
+  padding: 188px, 331px, 120px, 331px;
+  display: flex;
+  flex-direction: column;
 }
 /* ended first section */
-/* Our goals section with global styles*/
+/* Our goals section styles*/
+.title-none {
+  visibility: hidden;
+}
+
+.goals-list {
+  /* box model */
+  display: flex;
+  flex-direction: row;
+}
+
+.goals-list-item:not(:last-child) {
+  margin-right: 24px;
+}
 /* start Our team section*/
 .team-section {
   background-color: #f4f4fd;
 }
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+}
 .team-list-item {
   background-color: #fff;
+  padding-bottom: 32px;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 .team-list .sublist-title,
 .team-list .description {
   text-align: center;
 }
+
+.sublist-title {
+  margin-bottom: 8px;
+}
+
+.team-list-item img {
+  margin-bottom: 32px;
+}
 /* end Our team section */
-/* Our portfolio section with global styles */
+/* Our portfolio section styles */
+.portfolio-container {
+}
+.portfolio-title {
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-list:not(nth-child(3n + 1)) {
+  width: calc((100% + 48px) / 3);
+}
+
+.portfolio-sublist-title {
+  margin-bottom: 8px;
+}
+
+.portfolio-card {
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
 /* start footer section*/
 .footer {
   background-color: #2e2f42;
@@ -125,6 +260,7 @@ main .sublist-title {
 .footer .nav-logo {
   color: #4d5ae5;
   text-decoration: none;
+  padding: 1.5px 0;
 }
 
 .footer .description {
@@ -133,4 +269,10 @@ main .sublist-title {
 
 .footer .span-logo {
   color: #f4f4fd;
+}
+
+.footer-container {
+  margin: 0;
+  padding: 100px 0;
+  max-width: 264px;
 }
