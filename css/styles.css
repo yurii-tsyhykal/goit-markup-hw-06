@@ -96,9 +96,11 @@ main .sublist-title {
 }
 
 .menu {
-  column-gap: 40px;
+  gap: 40px;
 }
-.menu .menu-list-link {
+.menu-list-link {
+  display: inline-block;
+  padding: 24px 0;
   font-weight: 500;
   color: #2e2f42;
 }
@@ -107,9 +109,6 @@ main .sublist-title {
 .menu .menu-list-link:focus {
   font-weight: 500;
   color: #404bbf;
-}
-.menu-list {
-  padding: 24px 0;
 }
 
 /* margin for menu list */
@@ -263,6 +262,7 @@ main .sublist-title {
 .portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-sublist-title {
   margin-bottom: 8px;
@@ -276,7 +276,7 @@ main .sublist-title {
 .nav-logo-footer {
   /* box model */
   color: #4d5ae5;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   margin-bottom: 16px;
 }
