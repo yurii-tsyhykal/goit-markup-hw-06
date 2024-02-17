@@ -273,7 +273,7 @@ main .sublist-title {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-* .nav-logo-footer {
+.nav-logo-footer {
   /* box model */
   color: #4d5ae5;
   display: block;
