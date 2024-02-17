@@ -273,12 +273,12 @@ main .sublist-title {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-
-.footer .nav-logo {
+*/ .footer .nav-logo {
+  /* box model */
   display: block;
-  color: #4d5ae5;
   text-decoration: none;
   margin-bottom: 16px;
+  color: #4d5ae5;
 }
 
 .footer .description,
