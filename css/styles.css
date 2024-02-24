@@ -58,6 +58,8 @@ main .sublist-title {
 /* start header section */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .container-header,
@@ -167,6 +169,8 @@ main .sublist-title {
     ),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title {
@@ -229,6 +233,7 @@ main .sublist-title {
 .goals-list {
   /* box model */
   display: flex;
+
   gap: 24px;
 }
 
@@ -238,10 +243,12 @@ main .sublist-title {
 
 .goals-list-card {
   /* box model */
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-
+  height: 112px;
   background-color: #f4f4fd;
   padding: 24px 100px;
   margin-bottom: 8px;
@@ -276,7 +283,7 @@ main .sublist-title {
 }
 
 .team-list-container {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 .team-list-container .description {
   padding-bottom: 8px;
@@ -292,13 +299,14 @@ main .sublist-title {
 
 .list-icons {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
 .team-social-links {
   background-color: #4d5ae5;
   border-radius: 50%;
-  fill: white;
+  fill: #f4f4fd;
   width: 40px;
   height: 40px;
   display: flex;
@@ -310,7 +318,8 @@ main .sublist-title {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-links:hover {
+.team-social-links:hover,
+.team-social-links:focus {
   background-color: #404bbf;
 }
 
@@ -334,7 +343,8 @@ main .sublist-title {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -353,7 +363,7 @@ main .sublist-title {
   overflow: hidden;
 }
 
-.portfolio-container-text {
+/* .portfolio-container-text {
   background-color: #4d5ae5;
   padding-top: 40px;
   padding-right: 32px;
@@ -367,13 +377,29 @@ main .sublist-title {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .portfolio-container-description {
   color: #f4f4fd;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .portfolio-container-text {
+.portfolio-list-item:hover .portfolio-container-description {
   transform: translateY(0);
 }
 /* start footer section*/
@@ -412,14 +438,11 @@ main .sublist-title {
   gap: 16px;
 }
 .footer-list-item {
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
 }
-
-.footer-list-item:hover {
+.footer-list-link:hover,
+.footer-list-link:focus {
   background-color: #31d0aa;
 }
 .footer-list-link {
@@ -428,9 +451,12 @@ main .sublist-title {
   align-items: center;
   width: 40px;
   height: 40px;
-
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #f4f4fd;
 }
+
 .footer-social-icons {
   justify-content: center;
   align-items: center;
@@ -438,6 +464,16 @@ main .sublist-title {
 
 .footer > .container {
   display: flex;
-  column-gap: 120px;
-  align-items: flex-start;
+  align-items: baseline;
+  margin-right: 120px;
+}
+
+.footer-social-media {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
