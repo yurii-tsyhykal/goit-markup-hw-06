@@ -65,7 +65,9 @@
       <section class="first-section section">
         <div class="container container-first-section">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--section Our goals-->
@@ -494,9 +496,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <!-- modal form -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button" aria-label="close icon">
+        <button
+          class="modal-close-btn"
+          type="button"
+          aria-label="close icon"
+          data-modal-close
+        >
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-modal-close-btn"></use>
           </svg>
@@ -583,5 +591,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
