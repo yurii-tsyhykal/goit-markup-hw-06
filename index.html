@@ -484,7 +484,8 @@
                 placeholder="E-mail"
                 required
             /></label>
-            <button class="subscribe-btn" type="submit">Subscribe
+            <button class="subscribe-btn" type="submit">
+              Subscribe
               <svg class="subscribe-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
@@ -512,7 +513,6 @@
                 type="text"
                 id="user-name"
                 name="user-name"
-                autofocus
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -524,7 +524,13 @@
           <div class="modal-label-container">
             <label class="modal-label" for="phone-number">Phone</label>
             <div class="modal-input-container">
-              <input class="modal-input" type="tel" id="phone-number" required />
+              <input
+                class="modal-input"
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                required
+              />
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-modal-phone-icon"></use>
               </svg>
@@ -533,36 +539,46 @@
           <div class="modal-label-container">
             <label class="modal-label" for="user-email">Email</label>
             <div class="modal-input-container">
-              <input class="modal-input" type="email" id="user-email" required />
+              <input
+                class="modal-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+              />
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
             </div>
           </div>
-          <label class="modal-label" for="user-comment">Comment</label
-          ><textarea
-            class="modal-text-comment"
-            id="user-comment"
-            name="user-comment"
-            placeholder="Text input"
-          ></textarea
-          ><input
-            class="checkbox-hidden visually-hidden"
-            id="checkbox-privacy"
-            name="privacy-policy"
-            type="checkbox"
-            value="true"
-            required
-          />
+          <div class="modal-texarea-container">
+            <label class="modal-label" for="user-comment">Comment</label
+            ><textarea
+              class="modal-text-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox-container">
+            <input
+              class="checkbox-hidden-privacy visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
+              type="checkbox"
+              value="true"
+              required
+            />
 
-          <label for="checkbox-privacy" class="privacy-label">
-            <span class="custom-checkbox">
-              <svg class="custom-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a href="#" class="privacy-link">Privacy Policy</a>
-          </label>
+            <label for="user-privacy" class="modal-privacy-label">
+              <span class="custom-checkbox-item">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="#" class="modal-privacy-link">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>

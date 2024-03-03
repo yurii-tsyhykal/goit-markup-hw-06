@@ -653,24 +653,31 @@ main .sublist-title {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-texarea-container {
+  margin-bottom: 16px;
+}
+
 .modal-text-comment {
   display: block;
   background-color: transparent;
   width: 100%;
-  margin-bottom: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  min-height: 120px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   resize: none;
   padding: 8px 16px;
   outline: transparent;
   /*  */
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
 .modal-text-comment:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 .modal-input:focus + .modal-form-icon {
   fill: #4d5ae5;
@@ -685,8 +692,14 @@ main .sublist-title {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.custom-checkbox {
+.modal-checkbox-container {
+  margin-bottom: 24px;
+}
+
+.custom-checkbox-item {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -694,16 +707,18 @@ main .sublist-title {
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   fill: transparent;
-  align-items: center;
-  justify-content: center;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-hidden:checked + .privacy-label > .custom-checkbox {
+.checkbox-hidden-privacy:checked
+  + .modal-privacy-label
+  > .custom-checkbox-item {
   background-color: #404bbf;
-  fill: white;
+  border: none;
+  fill: #f4f4fd;
   border-color: #404bbf;
 }
 
@@ -711,17 +726,16 @@ main .sublist-title {
   outline: 1px solid black;
 } */
 
-.privacy-label {
+.modal-privacy-label {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 
-.privacy-link {
+.modal-privacy-link {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -736,7 +750,7 @@ main .sublist-title {
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border: none;
   cursor: pointer;
   margin: 0 auto;
@@ -749,8 +763,7 @@ main .sublist-title {
   text-align: center;
   color: #fff;
   /*  */
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:hover,
