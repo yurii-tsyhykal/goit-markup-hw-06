@@ -57,15 +57,20 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-btn" m-data-modal-open>
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Main content-->
     <main>
       <!--section Effective Solutions-->
-      <section class="first-section section">
+      <section class="hero-section section">
         <div class="container container-first-section">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button" data-modal-open>
+          <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -82,7 +87,7 @@
                 </svg>
               </div>
 
-              <h3 class="sublist-title">Strategy</h3>
+              <h3 class="sublist-title-goals">Strategy</h3>
               <p class="sublist-title-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -95,7 +100,7 @@
                 </svg>
               </div>
 
-              <h3 class="sublist-title">Punctuality</h3>
+              <h3 class="sublist-title-goals">Punctuality</h3>
               <p class="sublist-title-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -108,7 +113,7 @@
                 </svg>
               </div>
 
-              <h3 class="sublist-title">Diligence</h3>
+              <h3 class="sublist-title-goals">Diligence</h3>
               <p class="sublist-title-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -121,7 +126,7 @@
                 </svg>
               </div>
 
-              <h3 class="sublist-title">Technologies</h3>
+              <h3 class="sublist-title-goals">Technologies</h3>
               <p class="sublist-title-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -307,7 +312,7 @@
         </div>
       </section>
       <!-- section Our Portfolio -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container portfolio-container">
           <h2 class="title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -428,10 +433,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="container-footer">
           <a class="nav-logo nav-logo-footer" href="./index.html"
@@ -495,9 +500,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- modal form -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           class="modal-close-btn"
@@ -590,7 +595,83 @@
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
+    </div> -->
+    <div class="mobile-menu m-is-hidden" m-data-modal>
+      <div class="mobile-menu-container">
+        <button
+          type="button"
+          class="modal-close-btn"
+          aria-label="close menu button"
+          m-data-modal-close
+        >
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close-btn"></use>
+          </svg>
+        </button>
+        <nav class="m-menu-links-nav">
+          <ul class="mobile-menu-list">
+            <li class="m-menu-list-item">
+              <a href="index.html" class="m-menu-list-link link-pseudo"
+                >Studio</a
+              >
+            </li>
+            <li class="m-menu-list-item">
+              <a href="#" class="m-menu-list-link">Portfolio</a>
+            </li>
+            <li class="m-menu-list-item">
+              <a href="#" class="m-menu-list-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-box">
+          <address class="m-address">
+            <ul class="m-address-list">
+              <li class="m-address-list-item">
+                <a class="m-address-list-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="m-address-list-item">
+                <a class="m-address-list-link tel-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="m-icons-list">
+            <li class="m-icons-list-item">
+              <a class="m-icons-list-link" href>
+                <svg class="m-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="m-icons-list-item">
+              <a class="m-icons-list-link" href>
+                <svg class="m-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="m-icons-list-item">
+              <a class="m-icons-list-link" href>
+                <svg class="m-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="m-icons-list-item">
+              <a class="m-icons-list-link" href>
+                <svg class="m-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/m-modal.js"></script>
   </body>
 </html>
