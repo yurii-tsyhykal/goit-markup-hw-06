@@ -716,7 +716,7 @@ main .sublist-title {
   + .modal-privacy-label
   > .custom-checkbox-item {
   background-color: #404bbf;
-  border: none;
+  border: transparent;
   fill: #f4f4fd;
   border-color: #404bbf;
 }
